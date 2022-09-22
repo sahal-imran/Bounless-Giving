@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  font-family: "Metropolis";
+  box-sizing: border-box;
+  /* transition: all 0.4s ease; */
+}
+
+/* Custom fonts */
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-Black.otf") format("woff2"),
+    url("./fonts/Metropolis/Metropolis-Black.otf") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-BlackItalic.otf") format("woff2"),
+    url("./fonts/Metropolis/Metropolis-BlackItalic.otf") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-ExtraBold.otf") format("woff2"),
+    url("./fonts/Metropolis/Metropolis-ExtraBold.otf") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-ExtraBoldItalic.otf") format("woff2"),
+    url("./fonts/Metropolis/Metropolis-ExtraBoldItalic.otf") format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-Bold.otf") format("woff2"),
+    url("./fonts/Metropolis/Metropolis-Bold.otf") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-BoldItalic.otf") format("woff2"),
+    url("./fonts/Metropolis/Metropolis-BoldItalic.otf") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-SemiBold.otf") format("woff2"),
+    url("./fonts/Metropolis/Metropolis-SemiBold.otf") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-SemiBoldItalic.otf") format("woff2"),
+    url("./fonts/Metropolis/Metropolis-SemiBoldItalic.otf") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-Medium.otf") format("woff2"),
+    url("./fonts/Metropolis/Metropolis-Medium.otf") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-MediumItalic.otf") format("woff2"),
+    url("./fonts/Metropolis/Metropolis-MediumItalic.otf") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-Regular.otf") format("woff2"),
+    url("./fonts/Metropolis/Metropolis-Regular.otf") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-RegularItalic.otf") format("woff2"),
+    url("./fonts/Metropolis/Metropolis-RegularItalic.otf") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-Light.otf") format("woff2"),
+    url("./fonts/Metropolis/Metropolis-Light.otf") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-LightItalic.otf") format("woff2"),
+    url("./fonts/Metropolis/Metropolis-RegularItalic.otf") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-Thin.otf") format("woff2"),
+    url("./fonts/Metropolis/Metropolis-Thin.otf") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-ThinItalic.otf") format("woff2"),
+    url("./fonts/Metropolis/Metropolis-ThinItalic.otf") format("woff");
+  font-weight: 200;
+  font-style: italic;
+}
+
+.dropdown-content p:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: white;color: #173B83;}
