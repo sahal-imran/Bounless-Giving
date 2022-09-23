@@ -5,7 +5,6 @@ import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
 import { NavLink } from "react-router-dom";
 
-
 function Navbar() {
   return (
     <Box sx={{ width: "100%", background: "#173B83" }}>
@@ -64,9 +63,7 @@ function Navbar() {
         </NavLink>
 
         {/* dropdown */}
-        <Box
-          className="dropdown"
-        >
+        <Box className="dropdown">
           <Typography
             className="dropbtn"
             sx={{

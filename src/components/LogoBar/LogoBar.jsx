@@ -16,8 +16,9 @@ function LogoBar() {
         sx={{
           width: "100%",
           background: "white",
-          boxShadow: "0 2px 4px 0 rgb(0 0 0 / 10%)",position:'relative',
-          zIndex:1
+          boxShadow: "0 2px 4px 0 rgb(0 0 0 / 10%)",
+          position: "relative",
+          zIndex: 1,
         }}
       >
         <Container
