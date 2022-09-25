@@ -119,7 +119,7 @@ function BrowseByCause() {
                           height: "50px",
                           boxShadow: "none",
                           textTransform: "unset",
-                          whiteSpace:"nowrap",
+                          whiteSpace: "nowrap",
                           mt: 1,
                           "&:hover": {
                             background: "#A08737",
@@ -127,7 +127,7 @@ function BrowseByCause() {
                           },
                         }}
                       >
-                       Check Now
+                        Check Now
                       </Button>
                     </Box>
                   </Grid>

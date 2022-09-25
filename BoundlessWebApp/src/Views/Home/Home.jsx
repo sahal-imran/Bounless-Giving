@@ -5,6 +5,7 @@ import HowToCreateEvent from "../../components/LearnHowToCreateEventsOnline/HowT
 import UpComingEvents from "../../components/UpComingEvents/UpComingEvents";
 import BrowseByCategory from "../../components/BrowseByCategory/BrowseByCategory";
 import BrowseByCause from "../../components/BrowseByCause/BrowseByCause";
+import Form from "../../components/SubscribeForm/Form";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <UpComingEvents />
       <BrowseByCategory />
       <BrowseByCause />
+      <Form />
     </>
   );
 }
