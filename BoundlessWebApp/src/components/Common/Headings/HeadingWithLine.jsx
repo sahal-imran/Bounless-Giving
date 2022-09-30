@@ -7,8 +7,8 @@ export function H1WithLine({ Text, LineWidth }) {
       sx={{
         position: "relative",
         fontFamily: "Merriweather",
-        fontSize: "46px",
-        lineHeight: "75px",
+        fontSize: "38px",
+        lineHeight: "60px",
         fontWeight: 600,
         fontStyle: "normal",
         color: "rgb(51,51,51)",
