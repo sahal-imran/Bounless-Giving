@@ -116,7 +116,7 @@ function Hero() {
                 >
                   <Box
                     sx={{
-                      background: "rgb(23,56,80)",
+                      background: "white",
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
@@ -135,7 +135,7 @@ function Hero() {
                         lineHeight: "28px",
                         fontWeight: 600,
                         fontStyle: "normal",
-                        color: "white",
+                        color: "black",
                         textAlign: "center",
                       }}
                     >
@@ -148,7 +148,7 @@ function Hero() {
                         lineHeight: "20px",
                         fontWeight: 400,
                         fontStyle: "normal",
-                        color: "white",
+                        color: "black",
                         textAlign: "center",
                         mt: 1,
                         mb: 2,
@@ -166,7 +166,7 @@ function Hero() {
                         lineHeight: "20px",
                         fontWeight: 500,
                         fontStyle: "normal",
-                        color: "#A08737",
+                        color: "black",
                         textTransform: "capitalize",
                       }}
                     >
@@ -211,7 +211,7 @@ function Hero() {
                 >
                   <Box
                     sx={{
-                      background: "rgb(23,56,80)",
+                      background: "white",
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
@@ -230,7 +230,7 @@ function Hero() {
                         lineHeight: "28px",
                         fontWeight: 600,
                         fontStyle: "normal",
-                        color: "white",
+                        color: "black",
                         textAlign: "center",
                       }}
                     >
@@ -243,7 +243,7 @@ function Hero() {
                         lineHeight: "20px",
                         fontWeight: 400,
                         fontStyle: "normal",
-                        color: "white",
+                        color: "black",
                         textAlign: "center",
                         mt: 1,
                         mb: 2,
@@ -261,7 +261,7 @@ function Hero() {
                         lineHeight: "20px",
                         fontWeight: 500,
                         fontStyle: "normal",
-                        color: "#A08737",
+                        color: "black",
                         textTransform: "capitalize",
                       }}
                     >

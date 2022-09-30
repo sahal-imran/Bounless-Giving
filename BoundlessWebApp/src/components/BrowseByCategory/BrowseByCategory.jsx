@@ -33,53 +33,55 @@ function BrowseByCategory() {
               {Categories.map((item, index) => {
                 return (
                   <Grid index={index} item md={3} sm={4} xs={12}>
-                    <Box
-                      sx={{
-                        width: "100%",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "start",
-                        flexDirection: "column",
-                        cursor:'pointer'
-                      }}
-                    >
-                      {/* image */}
+                    <NavLink to={""} style={{ textDecoration: "none" }}>
                       <Box
                         sx={{
                           width: "100%",
-                          height: "300px",
-                          overflow: "hidden",
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "start",
+                          flexDirection: "column",
+                          cursor: "pointer",
                         }}
                       >
-                        <img
-                          src={item.imgURL}
-                          alt="img"
-                          style={{
+                        {/* image */}
+                        <Box
+                          sx={{
                             width: "100%",
-                            height: "100%",
-                            objectFit: "cover",
+                            height: "280px",
+                            overflow: "hidden",
                           }}
-                        />
+                        >
+                          <img
+                            src={item.imgURL}
+                            alt="img"
+                            style={{
+                              width: "100%",
+                              height: "100%",
+                              objectFit: "cover",
+                            }}
+                          />
+                        </Box>
+                        {/* Category Name */}
+                        <Typography
+                          className="dropbtn"
+                          sx={{
+                            position: "relative",
+                            fontFamily: "Merriweather",
+                            fontSize: "20px",
+                            lineHeight: "28px",
+                            fontWeight: 700,
+                            fontStyle: "normal",
+                            color: "rgb(51,51,51)",
+                            textAlign: "start",
+                            letterSpacing: "1px",
+                            mt: 3,
+                          }}
+                        >
+                          {item.Name}
+                        </Typography>
                       </Box>
-                      {/* Category Name */}
-                      <Typography
-                        className="dropbtn"
-                        sx={{
-                          position: "relative",
-                          fontFamily: "Merriweather",
-                          fontSize: "20px",
-                          lineHeight: "28px",
-                          fontWeight: 700,
-                          fontStyle: "normal",
-                          color: "rgb(51,51,51)",
-                          textAlign: "start",
-                          letterSpacing: "1px",
-                          mt: 3,
-                        }}
-                      >
-                        {item.Name}
-                      </Typography>
-                    </Box>
+                    </NavLink>
                   </Grid>
                 );
               })}
@@ -96,7 +98,7 @@ export default BrowseByCategory;
 const Categories = [
   {
     Name: "Clothes & Shoes",
-    imgURL: "/Assets/bag.webp"
+    imgURL: "/Assets/bag.webp",
   },
   {
     Name: "Travel",

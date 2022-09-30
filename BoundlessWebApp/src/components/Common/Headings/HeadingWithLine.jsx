@@ -7,7 +7,7 @@ export function H1WithLine({ Text, LineWidth }) {
       sx={{
         position: "relative",
         fontFamily: "Merriweather",
-        fontSize: "38px",
+        fontSize: "30px",
         lineHeight: "60px",
         fontWeight: 600,
         fontStyle: "normal",
@@ -15,12 +15,14 @@ export function H1WithLine({ Text, LineWidth }) {
         textAlign: "center",
         whiteSpace: "nowrap",
         letterSpacing: "1px",
+        textTransform:"capitalize",
         "&::after": {
           position: "absolute",
           bottom: "0px",
           left: "0px",
           content: `""`,
-          height: "3px",
+          height: "2px",
+          // +923047212779
           width: `${LineWidth}`,
           background: "#A08737",
         },

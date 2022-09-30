@@ -31,83 +31,93 @@ function BrowseByCause() {
           <Box sx={{ flexGrow: 1, width: "100%", mt: 6 }}>
             <Grid container columnSpacing={2} rowSpacing={6}>
               {Categories.map((item, index) => {
-                return (
-                  <Grid index={index} item md={3} sm={4} xs={12}>
-                    <Box
-                      sx={{
-                        width: "100%",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "start",
-                        flexDirection: "column",
-                      }}
-                    >
-                      {/* image */}
-                      <Box
-                        sx={{
+                if (index === 7) {
+                  return (
+                    <Grid index={index} item md={3} sm={4} xs={12}>
+                      <NavLink
+                        to={""}
+                        style={{
+                          textDecoration: "none",
                           width: "100%",
-                          height: "300px",
-                          overflow: "hidden",
+                          height: "280px",
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
                         }}
                       >
-                        <img
-                          src={item.imgURL}
-                          alt="img"
-                          style={{
-                            width: "100%",
-                            height: "100%",
-                            objectFit: "cover",
+                        <Typography
+                          className="dropbtn"
+                          sx={{
+                            position: "relative",
+                            fontFamily: "Merriweather",
+                            fontSize: "20px",
+                            lineHeight: "28px",
+                            fontWeight: 700,
+                            fontStyle: "normal",
+                            color: "rgb(51,51,51)",
+                            textAlign: "start",
+                            letterSpacing: "1px",
                           }}
-                        />
-                      </Box>
-                      {/* Category Name */}
-                      <Typography
-                        className="dropbtn"
-                        sx={{
-                          position: "relative",
-                          fontFamily: "Merriweather",
-                          fontSize: "20px",
-                          lineHeight: "28px",
-                          fontWeight: 700,
-                          fontStyle: "normal",
-                          color: "rgb(51,51,51)",
-                          textAlign: "start",
-                          letterSpacing: "1px",
-                          mt: 3,
-                        }}
-                      >
-                        {item.Name}
-                      </Typography>
-                      {/* Button */}
-                      <Button
-                        variant="contained"
-                        sx={{
-                          position: "relative",
-                          fontFamily: "Merriweather",
-                          fontSize: "18px",
-                          lineHeight: "24px",
-                          fontWeight: 400,
-                          fontStyle: "normal",
-                          color: "white",
-                          borderRadius: "5px",
-                          background: "#A08737",
-                          width: "100%",
-                          height: "50px",
-                          boxShadow: "none",
-                          textTransform: "unset",
-                          whiteSpace: "nowrap",
-                          mt: 1,
-                          "&:hover": {
-                            background: "#A08737",
-                            boxShadow: "none",
-                          },
-                        }}
-                      >
-                        Check Now
-                      </Button>
-                    </Box>
-                  </Grid>
-                );
+                        >
+                          {item.Name}
+                        </Typography>
+                      </NavLink>
+                    </Grid>
+                  );
+                } else {
+                  return (
+                    <Grid index={index} item md={3} sm={4} xs={12}>
+                      <NavLink to={""} style={{ textDecoration: "none" }}>
+                        <Box
+                          sx={{
+                            width: "100%",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "start",
+                            flexDirection: "column",
+                          }}
+                        >
+                          {/* image */}
+                          <Box
+                            sx={{
+                              width: "100%",
+                              height: "280px",
+                              overflow: "hidden",
+                            }}
+                          >
+                            <img
+                              src={item.imgURL}
+                              alt="img"
+                              style={{
+                                width: "100%",
+                                height: "100%",
+                                objectFit: "cover",
+                              }}
+                            />
+                          </Box>
+                          {/* Category Name */}
+                          <Typography
+                            className="dropbtn"
+                            sx={{
+                              position: "relative",
+                              fontFamily: "Merriweather",
+                              fontSize: "20px",
+                              lineHeight: "28px",
+                              fontWeight: 700,
+                              fontStyle: "normal",
+                              color: "rgb(51,51,51)",
+                              textAlign: "start",
+                              letterSpacing: "1px",
+                              mt: 3,
+                            }}
+                          >
+                            {item.Name}
+                          </Typography>
+                        </Box>
+                      </NavLink>
+                    </Grid>
+                  );
+                }
               })}
             </Grid>
           </Box>
@@ -149,7 +159,6 @@ const Categories = [
     imgURL: "/Assets/Human Services.jpg",
   },
   {
-    Name: "More",
-    imgURL: "/Assets/More.jpg",
+    Name: "More Causes",
   },
 ];

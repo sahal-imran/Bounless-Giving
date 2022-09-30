@@ -137,7 +137,7 @@ function Events() {
                     }}
                   >
                     {/* image */}
-                    <Box sx={{ width: "100%", height: "340px" }}>
+                    <Box sx={{ width: "100%", height: "300px" }}>
                       <img
                         src={item.URL}
                         alt="img"
@@ -153,7 +153,7 @@ function Events() {
                       sx={{
                         position: "relative",
                         fontFamily: "Merriweather",
-                        fontSize: "16px",
+                        fontSize: "14px",
                         lineHeight: "24px",
                         fontWeight: 300,
                         fontStyle: "normal",
@@ -170,15 +170,15 @@ function Events() {
                         display: "flex",
                         justifyContent: "start",
                         alignItems: "center",
-                        mt: 1,
+                        mt: 2,
                       }}
                     >
                       <Button
                         variant="outlined"
                         sx={{
                           fontFamily: "Merriweather",
-                          fontSize: "18px",
-                          lineHeight: "24px",
+                          fontSize: "16px",
+                          lineHeight: "20px",
                           fontWeight: 400,
                           fontStyle: "normal",
                           color: "#A08737",
@@ -190,8 +190,8 @@ function Events() {
                             boxShadow: "none",
                           },
                           textTransform: "capitalize",
-                          width: "200px",
-                          height: "56px",
+                          width: "160px",
+                          height: "46px",
                           letterSpacing: "1px",
                           mr: 2,
                         }}
@@ -199,7 +199,7 @@ function Events() {
                         Explore
                       </Button>
                       <NavLink to={""} style={{ textDecoration: "none" }}>
-                        <BsInfoCircle size={30} />
+                        <BsInfoCircle size={24} />
                       </NavLink>
                     </Box>
                   </Box>
@@ -258,6 +258,10 @@ const cards = [
   },
   {
     URL: "/Assets/event2.webp",
+    Name: "The Big Wave of Giving Beneftting Life Rolls On Coming this Fall",
+  },
+  {
+    URL: "/Assets/event3.webp",
     Name: "The Big Wave of Giving Beneftting Life Rolls On Coming this Fall",
   },
 ];

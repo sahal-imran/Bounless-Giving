@@ -43,8 +43,8 @@ function Form() {
             className="dropbtn"
             sx={{
               fontFamily: "Merriweather",
-              fontSize: "28px",
-              lineHeight: "36px",
+              fontSize: "24px",
+              lineHeight: "32px",
               fontWeight: 600,
               fontStyle: "normal",
               color: "rgb(51,51,51)",
@@ -150,7 +150,7 @@ function Form() {
                 <TextField
                   sx={{ fontFamily: "Metropolis", width: "100%" }}
                   id="standard-basic"
-                  label="Firstname"
+                  label="First Name"
                   variant="standard"
                 />
               </Box>
@@ -158,7 +158,7 @@ function Form() {
                 <TextField
                   sx={{ fontFamily: "Metropolis", width: "100%" }}
                   id="standard-basic"
-                  label="Lastname"
+                  label="Last Name"
                   variant="standard"
                 />
               </Box>
@@ -200,7 +200,7 @@ function Form() {
               width: "100%",
               height: "60px",
               boxShadow: "none",
-              textTransform: "unset",
+              textTransform: "capitalize",
               whiteSpace: "nowrap",
               mt: 1,
               "&:hover": {

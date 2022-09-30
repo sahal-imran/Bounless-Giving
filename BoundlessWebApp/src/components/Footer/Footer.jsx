@@ -103,7 +103,7 @@ function Footer() {
                     flexDirection: "column",
                   }}
                 >
-                  <Typography
+                  {/* <Typography
                     className="dropbtn"
                     sx={{
                       position: "relative",
@@ -129,7 +129,7 @@ function Footer() {
                     }}
                   >
                     SUPPORT
-                  </Typography>
+                  </Typography> */}
 
                   {Support.map((item, index) => {
                     return (
@@ -169,7 +169,7 @@ function Footer() {
                     flexDirection: "column",
                   }}
                 >
-                  <Typography
+                  {/* <Typography
                     className="dropbtn"
                     sx={{
                       position: "relative",
@@ -195,7 +195,7 @@ function Footer() {
                     }}
                   >
                     CORPORATE
-                  </Typography>
+                  </Typography> */}
 
                   {CORPORATE.map((item, index) => {
                     return (
@@ -275,10 +275,6 @@ const CORPORATE = [
   },
   {
     Name: "Terms and Conditions",
-    URL: "",
-  },
-  {
-    Name: "Get help",
     URL: "",
   }
 ];
