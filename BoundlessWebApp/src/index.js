@@ -29,7 +29,7 @@ const theme = createTheme({
       md: 900,
       lg: 1300,
       lgBig: 1480,
-      xl: 1580,
+      xl: 1580
     },
   },
 });

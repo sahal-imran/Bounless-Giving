@@ -13,6 +13,7 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import IconButton from "@mui/material/IconButton";
 import { BsInfoCircle } from "react-icons/bs";
+import { H1WithLine } from "../Common/Headings/HeadingWithLine";
 
 var settings = {
   dots: false,
@@ -65,6 +66,7 @@ function Events() {
       sx={{
         width: "100%",
         background: "white",
+        py:5
       }}
     >
       <Container
@@ -83,43 +85,17 @@ function Events() {
           sx={{
             width: "100%",
             display: "flex",
-            justifyContent: "space-between",
+            justifyContent: "start",
             alignItems: "center",
-            px: 10,
           }}
         >
-          <Typography
-            className="dropbtn"
-            sx={{
-              position: "relative",
-              fontFamily: "Metropolis",
-              fontSize: "70px",
-              lineHeight: "95px",
-              fontWeight: 600,
-              fontStyle: "normal",
-              color: "rgb(51,51,51)",
-              textAlign: "center",
-              whiteSpace: "nowrap",
-              letterSpacing: "1px",
-              "&::after": {
-                position: "absolute",
-                bottom: "0px",
-                left: "0px",
-                content: `""`,
-                height: "3px",
-                width: "100px",
-                background: "#A08737",
-              },
-            }}
-          >
-            Events
-          </Typography>
-          <NavLink
+          <H1WithLine Text={"Events happening right now"} LineWidth={"100px"} />
+          {/* <NavLink
             to={""}
             style={{
               textDecoration: "none",
-              fontFamily: "Metropolis",
-              fontSize: "18px",
+              fontFamily: "Merriweather",
+              fontSize: "16px",
               lineHeight: "26px",
               fontWeight: 500,
               fontStyle: "normal",
@@ -130,7 +106,7 @@ function Events() {
             }}
           >
             view all
-          </NavLink>
+          </NavLink> */}
         </Box>
 
         {/* cards */}
@@ -161,7 +137,7 @@ function Events() {
                     }}
                   >
                     {/* image */}
-                    <Box sx={{ width: "100%", height: "400px" }}>
+                    <Box sx={{ width: "100%", height: "340px" }}>
                       <img
                         src={item.URL}
                         alt="img"
@@ -176,25 +152,7 @@ function Events() {
                       className="dropbtn"
                       sx={{
                         position: "relative",
-                        fontFamily: "Metropolis",
-                        fontSize: "24px",
-                        lineHeight: "32px",
-                        fontWeight: 700,
-                        fontStyle: "normal",
-                        color: "rgb(51,51,51)",
-                        textAlign: "start",
-                        letterSpacing: "1px",
-                        mt: 2,
-                        height: "80px",
-                      }}
-                    >
-                      {item.Name}
-                    </Typography>
-                    <Typography
-                      className="dropbtn"
-                      sx={{
-                        position: "relative",
-                        fontFamily: "Metropolis",
+                        fontFamily: "Merriweather",
                         fontSize: "16px",
                         lineHeight: "24px",
                         fontWeight: 300,
@@ -202,9 +160,10 @@ function Events() {
                         color: "#333",
                         textAlign: "start",
                         letterSpacing: "1px",
+                        mt:3
                       }}
                     >
-                      {item.des}
+                      {item.Name}
                     </Typography>
                     <Box
                       sx={{
@@ -217,7 +176,7 @@ function Events() {
                       <Button
                         variant="outlined"
                         sx={{
-                          fontFamily: "Metropolis",
+                          fontFamily: "Merriweather",
                           fontSize: "18px",
                           lineHeight: "24px",
                           fontWeight: 400,
@@ -237,7 +196,7 @@ function Events() {
                           mr: 2,
                         }}
                       >
-                        Bid
+                        Explore
                       </Button>
                       <NavLink to={""} style={{ textDecoration: "none" }}>
                         <BsInfoCircle size={30} />
@@ -251,26 +210,26 @@ function Events() {
           <IconButton
             onClick={Prev}
             sx={{
-              width: "60px",
-              height: "60px",
+              width: "50px",
+              height: "50px",
               position: "absolute",
               left: "20px",
-              top: "28%",
+              top: "30%",
             }}
           >
-            <ArrowBackIosNewIcon sx={{ color: "white", fontSize: "30px" }} />
+            <ArrowBackIosNewIcon sx={{ color: "white", fontSize: "24px" }} />
           </IconButton>
           <IconButton
             onClick={Next}
             sx={{
-              width: "60px",
-              height: "60px",
+              width: "50px",
+              height: "50px",
               position: "absolute",
               right: "20px",
-              top: "28%",
+              top: "30%",
             }}
           >
-            <ArrowForwardIosIcon sx={{ color: "white", fontSize: "30px" }} />
+            <ArrowForwardIosIcon sx={{ color: "white", fontSize: "24px" }} />
           </IconButton>
         </Box>
       </Container>
@@ -283,27 +242,22 @@ export default Events;
 const cards = [
   {
     URL: "/Assets/event1.webp",
-    Name: "Contemporary Curated",
-    des: "14–22 September 2022 | 3:00 PM CEST | Paris",
+    Name: "The Big Wave of Giving Beneftting Life Rolls On Coming this Fall",
   },
   {
     URL: "/Assets/event2.webp",
-    Name: "SUBLIME BEAUTY: Korean ",
-    des: "15–22 September 2022 | 10:00 AM EDT | New York",
+    Name: "The Big Wave of Giving Beneftting Life Rolls On Coming this Fall",
   },
   {
     URL: "/Assets/event3.webp",
-    Name: "Property from the Collection of Dr. L",
-    des: "22 September 2022 | 12:00 PM EDT | New York",
+    Name: "The Big Wave of Giving Beneftting Life Rolls On Coming this Fall",
   },
   {
     URL: "/Assets/event4.webp",
-    Name: "Made in Britain",
-    des: "16–23 September 2022 | 11:00 AM BST | London",
+    Name: "The Big Wave of Giving Beneftting Life Rolls On Coming this Fall",
   },
   {
     URL: "/Assets/event2.webp",
-    Name: "SUBLIME BEAUTY: Korean ",
-    des: "15–22 September 2022 | 10:00 AM EDT | New York",
+    Name: "The Big Wave of Giving Beneftting Life Rolls On Coming this Fall",
   },
 ];

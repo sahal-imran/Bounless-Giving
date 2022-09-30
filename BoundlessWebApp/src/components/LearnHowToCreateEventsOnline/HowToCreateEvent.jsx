@@ -68,9 +68,9 @@ function HowToCreateEvent() {
           py: 4,
         }}
       >
-        <Box
+        <Container
+          maxWidth="xl"
           sx={{
-            width: "70%",
             m: "auto",
             display: "flex",
             justifyContent: "center",
@@ -82,7 +82,7 @@ function HowToCreateEvent() {
             className="dropbtn"
             sx={{
               position: "relative",
-              fontFamily: "Metropolis",
+              fontFamily: "Merriweather",
               fontSize: "30px",
               lineHeight: "36px",
               fontWeight: 600,
@@ -90,6 +90,7 @@ function HowToCreateEvent() {
               color: "rgb(51,51,51)",
               textAlign: "center",
               letterSpacing: "1px",
+              alignSelf: "center",
             }}
           >
             Learn More About How To Create Your Online Event With Boundless
@@ -97,325 +98,22 @@ function HowToCreateEvent() {
           </Typography>
           <Box
             sx={{
-              width: "100%",
-              position: "relative",
-              "&:hover button": {
-                background: "hsla(0,0%,100%,.48)",
-              },
-              mt:3
+              width: "75%",
+              m: "auto",
+              height: "70vh",
+              mt: 3,
             }}
           >
-            <Slider ref={Slider_Ref} {...settings}>
-              <Box sx={{ width: "100%", height: "80vh", position: "relative" }}>
-                <img
-                  src="/Assets/1.webp"
-                  alt="Slider"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    position: "absolute",
-                    left: 0,
-                    top: 0,
-                  }}
-                />
-                <Box
-                  sx={{
-                    position: "absolute",
-                    left: 0,
-                    top: 0,
-                    width: "100%",
-                    height: "100%",
-                    display: "flex",
-                    justifyContent: "start",
-                    alignItems: "end",
-                    p: 6,
-                  }}
-                >
-                  {/* card */}
-
-                  <NavLink
-                    to={""}
-                    style={{
-                      textDecoration: "none",
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        background: "rgb(23,56,80)",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "start",
-                        flexDirection: "column",
-                        width: "448px",
-                        p: 4,
-                        "&:hover .SeeMore": {
-                          textDecoration: "underline",
-                        },
-                      }}
-                    >
-                      <Typography
-                        sx={{
-                          fontFamily: "Metropolis",
-                          fontSize: "30px",
-                          lineHeight: "34px",
-                          fontWeight: 600,
-                          fontStyle: "normal",
-                          color: "white",
-                          textAlign: "center",
-                        }}
-                      >
-                        Hong Kong Autumn Sales
-                      </Typography>
-                      <Typography
-                        sx={{
-                          fontFamily: "Metropolis",
-                          fontSize: "18px",
-                          lineHeight: "24px",
-                          fontWeight: 400,
-                          fontStyle: "normal",
-                          color: "white",
-                          textAlign: "center",
-                          mt: 1,
-                          mb: 2,
-                        }}
-                      >
-                        2-9 October | Hong Kong
-                      </Typography>
-                      <Typography
-                        className="SeeMore"
-                        sx={{
-                          fontFamily: "Metropolis",
-                          fontSize: "16px",
-                          lineHeight: "20px",
-                          fontWeight: 500,
-                          fontStyle: "normal",
-                          color: "#A08737",
-                          textTransform: "uppercase",
-                        }}
-                      >
-                        see more
-                      </Typography>
-                    </Box>
-                  </NavLink>
-                </Box>
-              </Box>
-              <Box sx={{ width: "100%", height: "80vh", position: "relative" }}>
-                <img
-                  src="/Assets/2.webp"
-                  alt="Slider"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "fill",
-                    position: "absolute",
-                    left: 0,
-                    top: 0,
-                  }}
-                />
-                <Box
-                  sx={{
-                    position: "absolute",
-                    left: 0,
-                    top: 0,
-                    width: "100%",
-                    height: "100%",
-                    display: "flex",
-                    justifyContent: "end",
-                    alignItems: "end",
-                    p: 6,
-                  }}
-                >
-                  {/* card */}
-
-                  <NavLink
-                    to={""}
-                    style={{
-                      textDecoration: "none",
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        background: "rgb(23,56,80)",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "start",
-                        flexDirection: "column",
-                        width: "448px",
-                        p: 4,
-                        "&:hover .SeeMore": {
-                          textDecoration: "underline",
-                        },
-                      }}
-                    >
-                      <Typography
-                        sx={{
-                          fontFamily: "Metropolis",
-                          fontSize: "30px",
-                          lineHeight: "34px",
-                          fontWeight: 600,
-                          fontStyle: "normal",
-                          color: "white",
-                          textAlign: "center",
-                        }}
-                      >
-                        Contemporary Curated
-                      </Typography>
-                      <Typography
-                        sx={{
-                          fontFamily: "Metropolis",
-                          fontSize: "18px",
-                          lineHeight: "24px",
-                          fontWeight: 400,
-                          fontStyle: "normal",
-                          color: "white",
-                          textAlign: "start",
-                          mt: 1,
-                          mb: 2,
-                        }}
-                      >
-                        The multihyphenate British star is the curator of this
-                        season’s “Contemporary Curated,” including works by
-                        Richard Serra, Willem de Kooning, and more.
-                      </Typography>
-                      <Typography
-                        className="SeeMore"
-                        sx={{
-                          fontFamily: "Metropolis",
-                          fontSize: "16px",
-                          lineHeight: "20px",
-                          fontWeight: 500,
-                          fontStyle: "normal",
-                          color: "#A08737",
-                          textTransform: "uppercase",
-                        }}
-                      >
-                        see more
-                      </Typography>
-                    </Box>
-                  </NavLink>
-                </Box>
-              </Box>
-              <Box sx={{ width: "100%", height: "80vh", position: "relative" }}>
-                <img
-                  src="/Assets/3.webp"
-                  alt="Slider"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "fill",
-                    position: "absolute",
-                    left: 0,
-                    top: 0,
-                  }}
-                />
-                <Box
-                  sx={{
-                    position: "absolute",
-                    left: 0,
-                    top: 0,
-                    width: "100%",
-                    height: "100%",
-                    display: "flex",
-                    justifyContent: "start",
-                    alignItems: "end",
-                    p: 6,
-                  }}
-                >
-                  {/* card */}
-
-                  <NavLink
-                    to={""}
-                    style={{
-                      textDecoration: "none",
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        background: "rgb(23,56,80)",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "start",
-                        flexDirection: "column",
-                        width: "448px",
-                        p: 4,
-                        "&:hover .SeeMore": {
-                          textDecoration: "underline",
-                        },
-                      }}
-                    >
-                      <Typography
-                        sx={{
-                          fontFamily: "Metropolis",
-                          fontSize: "30px",
-                          lineHeight: "34px",
-                          fontWeight: 600,
-                          fontStyle: "normal",
-                          color: "white",
-                          textAlign: "center",
-                        }}
-                      >
-                        The Luxury Edit
-                      </Typography>
-                      <Typography
-                        sx={{
-                          fontFamily: "Metropolis",
-                          fontSize: "18px",
-                          lineHeight: "24px",
-                          fontWeight: 400,
-                          fontStyle: "normal",
-                          color: "white",
-                          textAlign: "start",
-                          mt: 1,
-                          mb: 2,
-                        }}
-                      >
-                        August–October | London, New York & Paris
-                      </Typography>
-                      <Typography
-                        className="SeeMore"
-                        sx={{
-                          fontFamily: "Metropolis",
-                          fontSize: "16px",
-                          lineHeight: "20px",
-                          fontWeight: 500,
-                          fontStyle: "normal",
-                          color: "#A08737",
-                          textTransform: "uppercase",
-                        }}
-                      >
-                        see more
-                      </Typography>
-                    </Box>
-                  </NavLink>
-                </Box>
-              </Box>
-            </Slider>
-            <IconButton
-              onClick={Prev}
-              sx={{
-                width: "50px",
-                height: "50px",
-                position: "absolute",
-                left: "20px",
-                top: "45%",
+            <img
+              src="/Assets/3.webp"
+              alt="Slider"
+              style={{
+                width: "100%",
+                height: "100%",
               }}
-            >
-              <ArrowBackIosNewIcon sx={{ color: "#333", fontSize: "28px" }} />
-            </IconButton>
-            <IconButton
-              onClick={Next}
-              sx={{
-                width: "50px",
-                height: "50px",
-                position: "absolute",
-                right: "20px",
-                top: "45%",
-              }}
-            >
-              <ArrowForwardIosIcon sx={{ color: "#333", fontSize: "28px" }} />
-            </IconButton>
+            />
           </Box>
-        </Box>
+        </Container>
       </Box>
     </>
   );

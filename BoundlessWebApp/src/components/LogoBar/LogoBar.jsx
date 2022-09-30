@@ -1297,7 +1297,7 @@ function LogoBar() {
                 className="btn"
                 sx={{
                   fontFamily: "Metropolis",
-                  fontSize: "16px",
+                  fontSize: "14px",
                   lineHeight: "80px",
                   fontWeight: 500,
                   fontStyle: "normal",

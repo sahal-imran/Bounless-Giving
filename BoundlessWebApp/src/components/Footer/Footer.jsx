@@ -37,7 +37,7 @@ function Footer() {
           <Typography
             className="dropbtn"
             sx={{
-              fontFamily: "Metropolis",
+              fontFamily: "Merriweather",
               fontSize: "32px",
               lineHeight: "40px",
               fontWeight: 600,
@@ -91,9 +91,9 @@ function Footer() {
             mt: 4,
           }}
         >
-          <Box sx={{ width: "60%" }}>
+          <Box sx={{ width: "30%" }}>
             <Grid container spacing={0}>
-              <Grid item xs={4}>
+              <Grid item xs={6}>
                 <Box
                   sx={{
                     width: "100%",
@@ -107,7 +107,7 @@ function Footer() {
                     className="dropbtn"
                     sx={{
                       position: "relative",
-                      fontFamily: "Metropolis",
+                      fontFamily: "Merriweather",
                       fontSize: "16px",
                       lineHeight: "24px",
                       fontWeight: 700,
@@ -140,7 +140,7 @@ function Footer() {
                       >
                         <Typography
                           sx={{
-                            fontFamily: "Metropolis",
+                            fontFamily: "Merriweather",
                             fontSize: "14px",
                             lineHeight: "24px",
                             fontWeight: 300,
@@ -159,7 +159,7 @@ function Footer() {
                   })}
                 </Box>
               </Grid>
-              <Grid item xs={4}>
+              <Grid item xs={6}>
                 <Box
                   sx={{
                     width: "100%",
@@ -173,7 +173,7 @@ function Footer() {
                     className="dropbtn"
                     sx={{
                       position: "relative",
-                      fontFamily: "Metropolis",
+                      fontFamily: "Merriweather",
                       fontSize: "16px",
                       lineHeight: "24px",
                       fontWeight: 700,
@@ -206,73 +206,7 @@ function Footer() {
                       >
                         <Typography
                           sx={{
-                            fontFamily: "Metropolis",
-                            fontSize: "14px",
-                            lineHeight: "24px",
-                            fontWeight: 300,
-                            fontStyle: "normal",
-                            color: "#333",
-                            textAlign: "center",
-                            whiteSpace: "nowrap",
-                            letterSpacing: "1px",
-                            mb: 2,
-                          }}
-                        >
-                          {item.Name}
-                        </Typography>
-                      </NavLink>
-                    );
-                  })}
-                </Box>
-              </Grid>
-              <Grid item xs={4}>
-                <Box
-                  sx={{
-                    width: "100%",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "start",
-                    flexDirection: "column",
-                  }}
-                >
-                  <Typography
-                    className="dropbtn"
-                    sx={{
-                      position: "relative",
-                      fontFamily: "Metropolis",
-                      fontSize: "16px",
-                      lineHeight: "24px",
-                      fontWeight: 700,
-                      fontStyle: "normal",
-                      color: "rgb(51,51,51)",
-                      textAlign: "center",
-                      whiteSpace: "nowrap",
-                      letterSpacing: "1px",
-                      "&::after": {
-                        position: "absolute",
-                        bottom: "0px",
-                        left: "0px",
-                        content: `""`,
-                        height: "2px",
-                        width: "40px",
-                        background: "#A08737",
-                      },
-                      mb: 2,
-                    }}
-                  >
-                    More
-                  </Typography>
-
-                  {More.map((item, index) => {
-                    return (
-                      <NavLink
-                        key={index}
-                        to={item.URL}
-                        style={{ textDecoration: "none" }}
-                      >
-                        <Typography
-                          sx={{
-                            fontFamily: "Metropolis",
+                            fontFamily: "Merriweather",
                             fontSize: "14px",
                             lineHeight: "24px",
                             fontWeight: 300,
@@ -336,42 +270,15 @@ const Support = [
 ];
 const CORPORATE = [
   {
-    Name: "Press",
+    Name: "FAQ",
     URL: "",
   },
   {
-    Name: "Privacy Policy",
+    Name: "Terms and Conditions",
     URL: "",
   },
   {
-    Name: "Corporate Governance",
+    Name: "Get help",
     URL: "",
-  },
-  {
-    Name: "Careers",
-    URL: "",
-  },
-];
-
-const More = [
-  {
-    Name: "Security",
-    URL: "",
-  },
-  {
-    Name: "Terms & Conditions",
-    URL: "",
-  },
-  {
-    Name: "Modern Slavery Statement",
-    URL: "",
-  },
-  {
-    Name: "Do Not Sell My Personal",
-    URL: "",
-  },
-  {
-    Name: "Information",
-    URL: "",
-  },
+  }
 ];

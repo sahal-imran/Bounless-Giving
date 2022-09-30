@@ -5,6 +5,7 @@ import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
 import { NavLink } from "react-router-dom";
 import Grid from "@mui/material/Grid";
+import { H1WithLine } from "../Common/Headings/HeadingWithLine";
 
 function BrowseByCause() {
   return (
@@ -26,32 +27,7 @@ function BrowseByCause() {
             flexDirection: "column",
           }}
         >
-          <Typography
-            className="dropbtn"
-            sx={{
-              position: "relative",
-              fontFamily: "Metropolis",
-              fontSize: "70px",
-              lineHeight: "95px",
-              fontWeight: 600,
-              fontStyle: "normal",
-              color: "rgb(51,51,51)",
-              textAlign: "center",
-              whiteSpace: "nowrap",
-              letterSpacing: "1px",
-              "&::after": {
-                position: "absolute",
-                bottom: "0px",
-                left: "0px",
-                content: `""`,
-                height: "3px",
-                width: "180px",
-                background: "#A08737",
-              },
-            }}
-          >
-            Browse by Category
-          </Typography>
+          <H1WithLine Text={"Browse by Cause"} LineWidth={"100px"} />
           <Box sx={{ flexGrow: 1, width: "100%", mt: 6 }}>
             <Grid container columnSpacing={2} rowSpacing={6}>
               {Categories.map((item, index) => {
@@ -89,9 +65,9 @@ function BrowseByCause() {
                         className="dropbtn"
                         sx={{
                           position: "relative",
-                          fontFamily: "Metropolis",
-                          fontSize: "24px",
-                          lineHeight: "38px",
+                          fontFamily: "Merriweather",
+                          fontSize: "20px",
+                          lineHeight: "28px",
                           fontWeight: 700,
                           fontStyle: "normal",
                           color: "rgb(51,51,51)",
@@ -107,9 +83,9 @@ function BrowseByCause() {
                         variant="contained"
                         sx={{
                           position: "relative",
-                          fontFamily: "Metropolis",
-                          fontSize: "24px",
-                          lineHeight: "38px",
+                          fontFamily: "Merriweather",
+                          fontSize: "18px",
+                          lineHeight: "24px",
                           fontWeight: 400,
                           fontStyle: "normal",
                           color: "white",

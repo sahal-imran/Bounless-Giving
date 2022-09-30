@@ -50,7 +50,6 @@ var settings = {
 };
 
 function Hero() {
-
   const Slider_Ref = useRef();
   const Next = () => {
     Slider_Ref.current.slickNext();
@@ -59,7 +58,6 @@ function Hero() {
   const Prev = () => {
     Slider_Ref.current.slickPrev();
   };
-
 
   return (
     <Box
@@ -105,7 +103,7 @@ function Hero() {
                   display: "flex",
                   justifyContent: "start",
                   alignItems: "end",
-                  p: 6,
+                  p: 4,
                 }}
               >
                 {/* card */}
@@ -121,10 +119,10 @@ function Hero() {
                       background: "rgb(23,56,80)",
                       display: "flex",
                       justifyContent: "center",
-                      alignItems: "start",
+                      alignItems: "center",
                       flexDirection: "column",
-                      width: "448px",
-                      p: 4,
+                      width: "400px",
+                      p: 2,
                       "&:hover .SeeMore": {
                         textDecoration: "underline",
                       },
@@ -132,22 +130,22 @@ function Hero() {
                   >
                     <Typography
                       sx={{
-                        fontFamily: "Metropolis",
-                        fontSize: "30px",
-                        lineHeight: "34px",
+                        fontFamily: "Merriweather",
+                        fontSize: "20px",
+                        lineHeight: "28px",
                         fontWeight: 600,
                         fontStyle: "normal",
                         color: "white",
                         textAlign: "center",
                       }}
                     >
-                      Hong Kong Autumn Sales
+                      Be Boundless
                     </Typography>
                     <Typography
                       sx={{
-                        fontFamily: "Metropolis",
-                        fontSize: "18px",
-                        lineHeight: "24px",
+                        fontFamily: "Merriweather",
+                        fontSize: "14px",
+                        lineHeight: "20px",
                         fontWeight: 400,
                         fontStyle: "normal",
                         color: "white",
@@ -156,117 +154,23 @@ function Hero() {
                         mb: 2,
                       }}
                     >
-                      2-9 October | Hong Kong
+                      Delve into our auctions and pop-up stores and
+                      <br />
+                      support a great cause
                     </Typography>
                     <Typography
                       className="SeeMore"
                       sx={{
-                        fontFamily: "Metropolis",
+                        fontFamily: "Merriweather",
                         fontSize: "16px",
                         lineHeight: "20px",
                         fontWeight: 500,
                         fontStyle: "normal",
                         color: "#A08737",
-                        textTransform: "uppercase",
+                        textTransform: "capitalize",
                       }}
                     >
-                      see more
-                    </Typography>
-                  </Box>
-                </NavLink>
-              </Box>
-            </Box>
-            <Box sx={{ width: "100%", height: "100vh", position: "relative" }}>
-              <img
-                src="/Assets/2.webp"
-                alt="Slider"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "fill",
-                  position: "absolute",
-                  left: 0,
-                  top: 0,
-                }}
-              />
-              <Box
-                sx={{
-                  position: "absolute",
-                  left: 0,
-                  top: 0,
-                  width: "100%",
-                  height: "100%",
-                  display: "flex",
-                  justifyContent: "end",
-                  alignItems: "end",
-                  p: 6,
-                }}
-              >
-                {/* card */}
-
-                <NavLink
-                  to={""}
-                  style={{
-                    textDecoration: "none",
-                  }}
-                >
-                  <Box
-                    sx={{
-                      background: "rgb(23,56,80)",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "start",
-                      flexDirection: "column",
-                      width: "448px",
-                      p: 4,
-                      "&:hover .SeeMore": {
-                        textDecoration: "underline",
-                      },
-                    }}
-                  >
-                    <Typography
-                      sx={{
-                        fontFamily: "Metropolis",
-                        fontSize: "30px",
-                        lineHeight: "34px",
-                        fontWeight: 600,
-                        fontStyle: "normal",
-                        color: "white",
-                        textAlign: "center",
-                      }}
-                    >
-                      Contemporary Curated
-                    </Typography>
-                    <Typography
-                      sx={{
-                        fontFamily: "Metropolis",
-                        fontSize: "18px",
-                        lineHeight: "24px",
-                        fontWeight: 400,
-                        fontStyle: "normal",
-                        color: "white",
-                        textAlign: "start",
-                        mt: 1,
-                        mb: 2,
-                      }}
-                    >
-                      The multihyphenate British star is the curator of this
-                      season’s “Contemporary Curated,” including works by
-                      Richard Serra, Willem de Kooning, and more.
-                    </Typography>
-                    <Typography
-                      className="SeeMore"
-                      sx={{
-                        fontFamily: "Metropolis",
-                        fontSize: "16px",
-                        lineHeight: "20px",
-                        fontWeight: 500,
-                        fontStyle: "normal",
-                        color: "#A08737",
-                        textTransform: "uppercase",
-                      }}
-                    >
-                      see more
+                      Explore Events
                     </Typography>
                   </Box>
                 </NavLink>
@@ -279,7 +183,6 @@ function Hero() {
                 style={{
                   width: "100%",
                   height: "100%",
-                  objectFit: "fill",
                   position: "absolute",
                   left: 0,
                   top: 0,
@@ -295,7 +198,7 @@ function Hero() {
                   display: "flex",
                   justifyContent: "start",
                   alignItems: "end",
-                  p: 6,
+                  p: 4,
                 }}
               >
                 {/* card */}
@@ -311,10 +214,10 @@ function Hero() {
                       background: "rgb(23,56,80)",
                       display: "flex",
                       justifyContent: "center",
-                      alignItems: "start",
+                      alignItems: "center",
                       flexDirection: "column",
-                      width: "448px",
-                      p: 4,
+                      width: "400px",
+                      p: 2,
                       "&:hover .SeeMore": {
                         textDecoration: "underline",
                       },
@@ -322,45 +225,47 @@ function Hero() {
                   >
                     <Typography
                       sx={{
-                        fontFamily: "Metropolis",
-                        fontSize: "30px",
-                        lineHeight: "34px",
+                        fontFamily: "Merriweather",
+                        fontSize: "20px",
+                        lineHeight: "28px",
                         fontWeight: 600,
                         fontStyle: "normal",
                         color: "white",
                         textAlign: "center",
                       }}
                     >
-                      The Luxury Edit
+                      Be Boundless
                     </Typography>
                     <Typography
                       sx={{
-                        fontFamily: "Metropolis",
-                        fontSize: "18px",
-                        lineHeight: "24px",
+                        fontFamily: "Merriweather",
+                        fontSize: "14px",
+                        lineHeight: "20px",
                         fontWeight: 400,
                         fontStyle: "normal",
                         color: "white",
-                        textAlign: "start",
+                        textAlign: "center",
                         mt: 1,
                         mb: 2,
                       }}
                     >
-                      August–October | London, New York & Paris
+                      Delve into our auctions and pop-up stores and
+                      <br />
+                      support a great cause
                     </Typography>
                     <Typography
                       className="SeeMore"
                       sx={{
-                        fontFamily: "Metropolis",
+                        fontFamily: "Merriweather",
                         fontSize: "16px",
                         lineHeight: "20px",
                         fontWeight: 500,
                         fontStyle: "normal",
                         color: "#A08737",
-                        textTransform: "uppercase",
+                        textTransform: "capitalize",
                       }}
                     >
-                      see more
+                      Explore Events
                     </Typography>
                   </Box>
                 </NavLink>
@@ -370,26 +275,26 @@ function Hero() {
           <IconButton
             onClick={Prev}
             sx={{
-              width: "80px",
-              height: "80px",
+              width: "60px",
+              height: "60px",
               position: "absolute",
               left: "20px",
               top: "45%",
             }}
           >
-            <ArrowBackIosNewIcon sx={{ color: "#333", fontSize: "36px" }} />
+            <ArrowBackIosNewIcon sx={{ color: "#333", fontSize: "28px" }} />
           </IconButton>
           <IconButton
             onClick={Next}
             sx={{
-              width: "80px",
-              height: "80px",
+              width: "60px",
+              height: "60px",
               position: "absolute",
               right: "20px",
               top: "45%",
             }}
           >
-            <ArrowForwardIosIcon sx={{ color: "#333", fontSize: "36px" }} />
+            <ArrowForwardIosIcon sx={{ color: "#333", fontSize: "28px" }} />
           </IconButton>
         </Box>
       </Container>

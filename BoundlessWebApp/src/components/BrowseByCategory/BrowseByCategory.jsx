@@ -5,6 +5,7 @@ import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
 import { NavLink } from "react-router-dom";
 import Grid from "@mui/material/Grid";
+import { H1WithLine } from "../Common/Headings/HeadingWithLine";
 
 function BrowseByCategory() {
   return (
@@ -26,32 +27,7 @@ function BrowseByCategory() {
             flexDirection: "column",
           }}
         >
-          <Typography
-            className="dropbtn"
-            sx={{
-              position: "relative",
-              fontFamily: "Metropolis",
-              fontSize: "70px",
-              lineHeight: "95px",
-              fontWeight: 600,
-              fontStyle: "normal",
-              color: "rgb(51,51,51)",
-              textAlign: "center",
-              whiteSpace: "nowrap",
-              letterSpacing: "1px",
-              "&::after": {
-                position: "absolute",
-                bottom: "0px",
-                left: "0px",
-                content: `""`,
-                height: "3px",
-                width: "180px",
-                background: "#A08737",
-              },
-            }}
-          >
-            Browse by Category
-          </Typography>
+          <H1WithLine Text={"Browse by Category"} LineWidth={"100px"} />
           <Box sx={{ flexGrow: 1, width: "100%", mt: 6 }}>
             <Grid container columnSpacing={2} rowSpacing={6}>
               {Categories.map((item, index) => {
@@ -64,6 +40,7 @@ function BrowseByCategory() {
                         justifyContent: "center",
                         alignItems: "start",
                         flexDirection: "column",
+                        cursor:'pointer'
                       }}
                     >
                       {/* image */}
@@ -84,52 +61,14 @@ function BrowseByCategory() {
                           }}
                         />
                       </Box>
-                      {/* price  tag */}
-                      <Box
-                        sx={{
-                          width: "100%",
-                          display: "flex",
-                          justifyContent: "end",
-                          alignItems: "center",
-                          mt: -6.5,
-                          px: 2,
-                        }}
-                      >
-                        <Box
-                          sx={{
-                            p: 1,
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            borderRadius: "5px",
-                            background: "#A08737",
-                          }}
-                        >
-                          <Typography
-                            className="dropbtn"
-                            sx={{
-                              position: "relative",
-                              fontFamily: "Metropolis",
-                              fontSize: "16px",
-                              lineHeight: "24px",
-                              fontWeight: 400,
-                              fontStyle: "italic",
-                              color: "white",
-                              letterSpacing: "1px",
-                            }}
-                          >
-                            30% off
-                          </Typography>
-                        </Box>
-                      </Box>
                       {/* Category Name */}
                       <Typography
                         className="dropbtn"
                         sx={{
                           position: "relative",
-                          fontFamily: "Metropolis",
-                          fontSize: "24px",
-                          lineHeight: "38px",
+                          fontFamily: "Merriweather",
+                          fontSize: "20px",
+                          lineHeight: "28px",
                           fontWeight: 700,
                           fontStyle: "normal",
                           color: "rgb(51,51,51)",
@@ -140,33 +79,6 @@ function BrowseByCategory() {
                       >
                         {item.Name}
                       </Typography>
-                      {/* Button */}
-                      <Button
-                        variant="contained"
-                        sx={{
-                          position: "relative",
-                          fontFamily: "Metropolis",
-                          fontSize: "24px",
-                          lineHeight: "38px",
-                          fontWeight: 400,
-                          fontStyle: "normal",
-                          color: "white",
-                          borderRadius: "5px",
-                          background: "#A08737",
-                          width: "100%",
-                          height: "50px",
-                          boxShadow: "none",
-                          textTransform: "unset",
-                          whiteSpace:"nowrap",
-                          mt: 1,
-                          "&:hover": {
-                            background: "#A08737",
-                            boxShadow: "none",
-                          },
-                        }}
-                      >
-                        Buy Now
-                      </Button>
                     </Box>
                   </Grid>
                 );
@@ -184,42 +96,34 @@ export default BrowseByCategory;
 const Categories = [
   {
     Name: "Clothes & Shoes",
-    imgURL: "/Assets/bag.webp",
-    off: "30%",
+    imgURL: "/Assets/bag.webp"
   },
   {
-    Name: "Clothes & Shoes",
+    Name: "Travel",
     imgURL: "/Assets/Clothes & Shoes.webp",
-    off: "30%",
   },
   {
-    Name: "Clothes & Shoes",
+    Name: "Experiences",
     imgURL: "/Assets/Clothes & Shoes.webp",
-    off: "30%",
   },
   {
-    Name: "Clothes & Shoes",
+    Name: "Brand Promotions",
     imgURL: "/Assets/Clothes & Shoes.webp",
-    off: "30%",
   },
   {
-    Name: "Clothes & Shoes",
+    Name: "Jewelry",
     imgURL: "/Assets/Clothes & Shoes.webp",
-    off: "30%",
   },
   {
-    Name: "Clothes & Shoes",
+    Name: "Memorabilia",
     imgURL: "/Assets/cart.webp",
-    off: "30%",
   },
   {
-    Name: "Clothes & Shoes",
+    Name: "Art",
     imgURL: "/Assets/Clothes & Shoes.webp",
-    off: "30%",
   },
   {
-    Name: "Clothes & Shoes",
+    Name: "Brand Discounts",
     imgURL: "/Assets/Clothes & Shoes.webp",
-    off: "30%",
   },
 ];

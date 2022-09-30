@@ -42,7 +42,7 @@ function Form() {
           <Typography
             className="dropbtn"
             sx={{
-              fontFamily: "Metropolis",
+              fontFamily: "Merriweather",
               fontSize: "28px",
               lineHeight: "36px",
               fontWeight: 600,
@@ -53,12 +53,12 @@ function Form() {
             }}
           >
             Keep informed about upcoming events and news about the Boundless
-            community of nonprofts
+            community of nonprofits
           </Typography>
           <Typography
             className="dropbtn"
             sx={{
-              fontFamily: "Metropolis",
+              fontFamily: "Merriweather",
               fontSize: "14px",
               lineHeight: "20px",
               fontWeight: 400,
@@ -68,7 +68,7 @@ function Form() {
               mt: 4,
             }}
           >
-            Receive the best from Boundless’s delivered to your inbox.
+            Receive the best from Boundless delivered to your inbox.
           </Typography>
 
           <Box
@@ -92,10 +92,10 @@ function Form() {
               {/* Email */}
               <Box sx={{ width: { md: "80%", xs: "100%" }, mr: { md: 1 } }}>
                 <TextField
-                  sx={{ width: "100%" }}
                   id="standard-basic"
                   label="Email address"
                   variant="standard"
+                  sx={{ fontFamily: "Metropolis", width: "100%" }}
                 />
               </Box>
               {/* Title */}
@@ -107,7 +107,10 @@ function Form() {
                 }}
               >
                 <FormControl variant="standard" sx={{ width: "100%" }}>
-                  <InputLabel id="demo-simple-select-standard-label">
+                  <InputLabel
+                    sx={{ fontFamily: "Metropolis" }}
+                    id="demo-simple-select-standard-label"
+                  >
                     Title
                   </InputLabel>
                   <Select
@@ -116,13 +119,20 @@ function Form() {
                     value={Title}
                     onChange={handleChange}
                     label="Title"
+                    sx={{ fontFamily: "Metropolis" }}
                   >
-                    <MenuItem value="">
+                    <MenuItem sx={{ fontFamily: "Metropolis" }} value="">
                       <em>None</em>
                     </MenuItem>
-                    <MenuItem value={10}>Ten</MenuItem>
-                    <MenuItem value={20}>Twenty</MenuItem>
-                    <MenuItem value={30}>Thirty</MenuItem>
+                    <MenuItem sx={{ fontFamily: "Metropolis" }} value={10}>
+                      Ten
+                    </MenuItem>
+                    <MenuItem sx={{ fontFamily: "Metropolis" }} value={20}>
+                      Twenty
+                    </MenuItem>
+                    <MenuItem sx={{ fontFamily: "Metropolis" }} value={30}>
+                      Thirty
+                    </MenuItem>
                   </Select>
                 </FormControl>
               </Box>
@@ -138,7 +148,7 @@ function Form() {
             >
               <Box sx={{ width: { md: "50%", xs: "100%" }, mr: { md: 1 } }}>
                 <TextField
-                  sx={{ width: "100%" }}
+                  sx={{ fontFamily: "Metropolis", width: "100%" }}
                   id="standard-basic"
                   label="Firstname"
                   variant="standard"
@@ -146,7 +156,7 @@ function Form() {
               </Box>
               <Box sx={{ width: { md: "50%", xs: "100%" }, mr: { md: 1 } }}>
                 <TextField
-                  sx={{ width: "100%" }}
+                  sx={{ fontFamily: "Metropolis", width: "100%" }}
                   id="standard-basic"
                   label="Lastname"
                   variant="standard"
@@ -159,7 +169,7 @@ function Form() {
           <Typography
             className="dropbtn"
             sx={{
-              fontFamily: "Metropolis",
+              fontFamily: "Merriweather",
               fontSize: "14px",
               lineHeight: "20px",
               fontWeight: 400,
@@ -169,9 +179,9 @@ function Form() {
               mt: 8,
             }}
           >
-            By subscribing you are agreeing to Sotheby’s Privacy Policy. You can
-            unsubscribe from Bounless’s emails at any time by clicking the
-            “Manage your Subscriptions” link in any of your emails.
+            By subscribing you are agreeing to Boundless Giving's Privacy
+            Policy. You can unsubscribe from Boundless Giving emails at any time
+            by clicking the "Unsubscribe" link in any of your emails.
           </Typography>
 
           {/* Button */}
@@ -179,7 +189,7 @@ function Form() {
             variant="contained"
             sx={{
               position: "relative",
-              fontFamily: "Metropolis",
+              fontFamily: "Merriweather",
               fontSize: "24px",
               lineHeight: "26px",
               fontWeight: 400,
