@@ -88,7 +88,7 @@ function Events() {
             alignItems: "center",
           }}
         >
-          <H1WithLine Text={"UpComing Events"} LineWidth={"100px"} />
+          <H1WithLine Text={"Upcoming Events"} LineWidth={"100px"} />
           {/* <NavLink
             to={""}
             style={{

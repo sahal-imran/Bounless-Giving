@@ -52,23 +52,7 @@ function Form() {
               maxWidth: { md: "800px" },
             }}
           >
-            Keep informed about upcoming events and news about the Boundless
-            community of nonprofits
-          </Typography>
-          <Typography
-            className="dropbtn"
-            sx={{
-              fontFamily: "Merriweather",
-              fontSize: "14px",
-              lineHeight: "20px",
-              fontWeight: 400,
-              fontStyle: "normal",
-              color: "#333",
-              textAlign: "center",
-              mt: 4,
-            }}
-          >
-            Receive the best from Boundless delivered to your inbox.
+            Register for updates about upcoming Boundless events and news.
           </Typography>
 
           <Box
@@ -180,8 +164,8 @@ function Form() {
             }}
           >
             By subscribing you are agreeing to Boundless Giving's Privacy
-            Policy. You can unsubscribe from Boundless Giving emails at any time
-            by clicking the "Unsubscribe" link in any of your emails.
+            Policy. You may unsubscribe from Boundless Giving communications by
+            clicking the "Unsubscribe" link in any of your emails.
           </Typography>
 
           {/* Button */}

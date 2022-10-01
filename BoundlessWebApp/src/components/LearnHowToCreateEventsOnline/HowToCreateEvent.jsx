@@ -83,7 +83,7 @@ function HowToCreateEvent() {
             sx={{
               position: "relative",
               fontFamily: "Merriweather",
-              fontSize: "30px",
+              fontSize: "24px",
               lineHeight: "36px",
               fontWeight: 600,
               fontStyle: "normal",
@@ -98,9 +98,9 @@ function HowToCreateEvent() {
           </Typography>
           <Box
             sx={{
-              width: "75%",
+              width: "50%",
               m: "auto",
-              height: "70vh",
+              height: "50vh",
               mt: 3,
             }}
           >
