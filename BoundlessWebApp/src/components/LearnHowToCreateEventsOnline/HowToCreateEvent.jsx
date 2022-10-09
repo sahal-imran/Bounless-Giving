@@ -98,10 +98,10 @@ function HowToCreateEvent() {
           </Typography>
           <Box
             sx={{
-              width: "50%",
+              width: "70%",
               m: "auto",
-              height: "50vh",
-              mt: 3,
+              height: "70vh",
+              mt: 2,
             }}
           >
             <img

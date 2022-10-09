@@ -75,7 +75,7 @@ function Hero() {
         <Box
           sx={{
             position: "relative",
-            width:'80%',
+            width:'100%',
             m:'auto',
             "&:hover button": {
               background: "hsla(0,0%,100%,.48)",
@@ -83,7 +83,7 @@ function Hero() {
           }}
         >
           <Slider ref={Slider_Ref} {...settings}>
-            <Box sx={{ width: "100%", height: "80vh", position: "relative" }}>
+            <Box sx={{ width: "100%", height: "100vh", position: "relative" }}>
               <img
                 src="/Assets/1.webp"
                 alt="Slider"
@@ -179,7 +179,7 @@ function Hero() {
                 </NavLink>
               </Box>
             </Box>
-            <Box sx={{ width: "100%", height: "80vh", position: "relative" }}>
+            <Box sx={{ width: "100%", height: "100vh", position: "relative" }}>
               <img
                 src="/Assets/3.webp"
                 alt="Slider"
